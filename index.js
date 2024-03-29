@@ -15,6 +15,9 @@ function displayMenuItems(menu) {
         categoryTitle.textContent = category;
         menuContainer.appendChild(categoryTitle);
 
+        // Insert a line break after the category title
+        menuContainer.appendChild(document.createElement('br'));
+
         // Create a <div> element to contain category items
         const categoryElement = document.createElement('div');
         menuContainer.appendChild(categoryElement);
@@ -32,6 +35,7 @@ function displayMenuItems(menu) {
         });
     }
 }
+
 
 
 
